@@ -25,6 +25,9 @@ def divisibility_array1(word: str, m: int):
 
 
 def main():
+    import sys
+    sys.set_int_max_str_digits(0)  # to mitigate denial of service attacks. But issues exist.
+
     print(divisibility_array("12344", 2))
     print(divisibility_array1("12344", 2))
 
